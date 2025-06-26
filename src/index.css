@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@font-face{
+  font-family: 'poppins';
+  src: url('./Fonts/Poppins-Light.ttf') format('truetype');
+  font-style: normal;
+  font-display: normal;
+}
+
+@font-face{
+  font-family: 'clash';
+  src: url('./Fonts/ClashDisplay-Medium.otf') format('opentype');
+  font-style: normal;
+  font-display: normal;
+}
+
+@font-face{
+  font-family: 'box';
+  src: url('./Fonts/Boxing-Regular.otf') format('opentype');
+  font-style: normal;
+  font-display: normal;
+}
+
+@theme{
+  /* Colors */
+  --color-background: #060611;
+  --color-bgblur: #0606117e;
+  --color-borderColor: #313131;
+  --color-blue: #2900dd;
+  --color-mainText: white;
+  --color-ashHover: #202020;
+  --color-textAsh1: gray;
+  --color-textAsh2: #999999;
+  --color-button: #0400db;
+  --color-buttonHover: #020152;
+
+  /* Sizes */
+  --text-smallText: clamp(1em, 3vw, 1.1em);
+  --text-h1: clamp(2em,4vw,3.2em);
+  --text-h2: clamp(1.7em,4vw,2em);
+  --spacing-maxWidth: 1400px;
+  --spacing-genround: 10px;
+  --spacing-Buttonspace: 15px 30px;
+  --spacing-section: 80px 20px;
+  --spacing-section2: 120px 20px;
+  --spacing-Header: 20px;
+  --spacing-section3: 50px 20px;
+
+  /* Fonts */
+  --font-poppins: 'poppins';
+  --font-box: 'box';
+  --font-clash: 'clash';
+}
+
+*{
+  @apply font-clash;
+}
+
+body{
+  @apply bg-background font-box pb-[100px];
+  /* background-color: #0606117e; */
+}
+
+.poppins{
+  font-family: 'poppins';
+}
+
+.clash{
+  font-family: 'clash';
+}
+
+.box{
+  font-family: 'box';
+}
+
+.outside{
+  @apply w-full border-b-1 border-dashed border-b-borderColor flex justify-center items-center;
+  /* background-color: #060611; */
+}
+
+.out{
+  @apply w-full border-b-1 border-dashed border-b-borderColor flex;
+  /* background-color: #060611; */
+}
+
+.inside{
+  @apply w-[90%] max-w-maxWidth border-x-borderColor border-dashed border-x-1 box-border flex justify-center items-center;
+}
+
+.in{
+  @apply w-[90%] max-w-maxWidth border-x-borderColor border-dashed border-x-1 box-border flex;
+}
+
+nav{
+  @apply p-Header
+}
+
+.between{
+  @apply justify-between;
+}
+
+
+.Pages{
+  @apply text-smallText hover:text-textAsh1 text-mainText;
+}
+  
+.section1{
+  @apply p-section2;
+}
+
+.start{
+  @apply items-start
+}
+
+.dashed{
+  @apply border-1 border-dashed border-borderColor
+}
+
+.noPadding{
+  @apply p-0
+}
+
+.section2{
+  @apply items-stretch
+}
+
+.grid3{
+  @apply grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] 
+  max-[978px]:grid-cols-[repeat(auto-fit,minmax(300px,1fr))]
+  max-[400px]:flex
+  max-[400px]:flex-col
+  gap-[20px] items-stretch;
+
+}
