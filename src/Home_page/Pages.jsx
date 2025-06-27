@@ -5,11 +5,11 @@ export default function Pages({others}) {
 
     return (
         <div className={`flex cursor-pointer ${others}`}>
-            <a href="#" className='Pages hover:text-textAsh1'>Behance</a>
-            <a href="#" className='Pages'>Show case</a>
-            <a href="#" className='Pages'>About</a>
-            <a href="#" className='Pages'>Contact us</a>
-            {github}
+            <a href="#" target='_blank' className='Pages hover:text-textAsh1'>Behance</a>
+            <a href="#" target='_blank' className='Pages'>Show case</a>
+            <a href="#" target='_blank' className='Pages'>About</a>
+            <a href="#" target='_blank' className='Pages'>Contact us</a>
+            <a href="https://github.com/Mr-Aceil"target='_blank' >{github}</a>
         </div>
     )
 }
