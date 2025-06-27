@@ -41,10 +41,11 @@
   --spacing-maxWidth: 1400px;
   --spacing-genround: 10px;
   --spacing-Buttonspace: 15px 30px;
-  --spacing-section: 80px 20px;
-  --spacing-section2: 120px 20px;
+  --spacing-section: 80px 10px;
+  --spacing-section2: 120px 10px;
+  --spacing-smallp: 15px 10px;
   --spacing-Header: 20px;
-  --spacing-section3: 50px 20px;
+  --spacing-section3: 50px 10px;
 
   /* Fonts */
   --font-poppins: 'poppins';
@@ -84,7 +85,7 @@ body{
 }
 
 .inside{
-  @apply w-[90%] max-w-maxWidth border-x-borderColor border-dashed border-x-1 box-border flex justify-center items-center;
+  @apply w-[95%] max-w-maxWidth border-x-borderColor border-dashed border-x-1 box-border flex justify-center items-center;
 }
 
 .in{
