@@ -25,6 +25,7 @@
   /* Colors */
   --color-background: #060611;
   --color-bgblur: #0606117e;
+  --color-imgbackup: #636363;
   --color-borderColor: #313131;
   --color-blue: #2900dd;
   --color-mainText: white;
@@ -59,7 +60,7 @@
 
 body{
   @apply bg-background font-box pb-[100px];
-  /* background-color: #0606117e; */
+  /* background-color: #636363; */
 }
 
 .poppins{
