@@ -7,7 +7,7 @@ export default function section1() {
 
     return (
         <section className='outside'>
-            <div className='inside between p-section2 max-[700px]:py-[80px] gap-[30px]'>
+            <div className='inside between inp2 max-[700px]:py-[80px] gap-[30px]'>
                 <div className='flex gap-[20px] flex-col max-w-[800px] w-full text-white'>
                     <h1 className='text-h1 w-full'>Modern web design, built for tomorrow. We create engaging experiences that stand out.</h1>
                     <p className='poppins text-smallText text-textAsh1'>Your vision. Our expertise. Together, we create exceptional digital realities.</p>

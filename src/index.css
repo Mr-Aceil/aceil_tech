@@ -42,11 +42,16 @@
   --spacing-maxWidth: 1400px;
   --spacing-genround: 10px;
   --spacing-Buttonspace: 15px 30px;
-  --spacing-section: 80px 10px;
-  --spacing-section2: 120px 10px;
+  --spacing-section: 80px 20px;
+  --spacing-section2: 120px 20px;
+  --spacing-section3: 50px 20px;
+  --spacing-section4: 10px 20px;
   --spacing-smallp: 15px 10px;
   --spacing-Header: 20px;
-  --spacing-section3: 50px 10px;
+
+  /* Border radius */
+  --radius-cardround: 20px;
+
 
   /* Fonts */
   --font-poppins: 'poppins';
@@ -56,6 +61,22 @@
 
 *{
   @apply font-clash;
+}
+
+.inp{
+  @apply p-section max-[500px]:px-[10px]
+}
+
+.inp2{
+  @apply p-section2 max-[500px]:px-[10px]
+}
+
+.inp3{
+  @apply p-section3 max-[500px]:px-[10px]
+}
+
+.inp4{
+  @apply p-section4 max-[500px]:px-[10px]
 }
 
 body{
@@ -94,7 +115,7 @@ body{
 }
 
 nav{
-  @apply p-Header
+  @apply p-Header max-[500px]:px-[10px];
 }
 
 .between{
@@ -107,7 +128,7 @@ nav{
 }
   
 .section1{
-  @apply p-section2;
+  @apply p-section2 max-[500px]:px-[10px];
 }
 
 .start{
