@@ -31,7 +31,7 @@ export default function Header() {
                                     ${hamburger ? 'flex' : 'hidden'}`}>
                         
                         <div className='flex w-full justify-center out
-                                        max-[500px]:px-[5px]'>
+                                        '>
                             <div className='inside p-Header between'>
                                 <img  src={Logo} alt="Logo" className='w-[60px] cursor-pointer'/>
                                 {cancel}
@@ -39,7 +39,7 @@ export default function Header() {
                         </div>
 
                         <div className='flex w-full justify-center out
-                                        max-[500px]:px-[5px]'>
+                                        '>
                                             
                             <div className='w-full flex in n95 h-full'>
                                 <Pages others='flex-col gap-[20px] active:text-textAsh1 '/>
