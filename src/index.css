@@ -124,7 +124,10 @@ nav{
 
 
 .Pages{
-  @apply text-smallText hover:text-textAsh1 text-mainText;
+  @apply text-smallText hover:text-textAsh1 text-mainText 
+  max-[580px]:w-full
+  max-[580px]:p-Header
+;
 }
   
 .section1{
@@ -133,6 +136,10 @@ nav{
 
 .start{
   @apply items-start
+}
+
+.n95{
+  @apply w-[95%]
 }
 
 .dashed{
@@ -154,4 +161,8 @@ nav{
   max-[400px]:flex-col
   gap-[20px] items-stretch;
 
+}
+
+.bluredBg{
+  @apply bg-bgblur backdrop-blur-[10px]
 }

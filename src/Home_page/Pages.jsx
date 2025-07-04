@@ -9,7 +9,7 @@ export default function Pages({others}) {
             <a href="#" target='_blank' className='Pages'>Show case</a>
             <a href="#" target='_blank' className='Pages'>About</a>
             <a href="#" target='_blank' className='Pages'>Contact us</a>
-            <a href="https://github.com/Mr-Aceil"target='_blank' >{github}</a>
+            <a href="https://github.com/Mr-Aceil"target='_blank'className='Pages' >{github}</a>
         </div>
     )
 }

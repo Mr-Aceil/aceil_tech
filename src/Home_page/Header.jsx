@@ -16,7 +16,7 @@ export default function Header() {
 
 
     return (
-        <header className='outside sticky top-0 right-0 bg-bgblur backdrop-blur-[10px]'>
+        <header className='outside sticky top-0 right-0 bluredBg'>
             <nav className='inside between'>
                 <img src={Logo} alt="Logo" className='w-[60px] cursor-pointer'/>
 
@@ -27,10 +27,24 @@ export default function Header() {
                 <div className='hidden max-[580px]:block'>
                     {menu}
 
-                    <div className={`border-r-[1px] border-borderColor border-dashed fixed flex flex-col  gap-[25px] top-0 right-0 h-[100vh] w-full max-w-[300px] z-10 bg-background text-mainText p-Header  
-                                    ${hamburger ? 'block' : 'hidden'}`}>
-                        {cancel}
-                        <Pages others='flex-col gap-[20px] active:text-textAsh1 '/>
+                    <div className={`fixed items-center flex-col top-0 right-0 w-full z-10 bg-background text-mainText 
+                                    ${hamburger ? 'flex' : 'hidden'}`}>
+                        
+                        <div className='flex w-full justify-center out
+                                        max-[500px]:px-[5px]'>
+                            <div className='inside p-Header between'>
+                                <img  src={Logo} alt="Logo" className='w-[60px] cursor-pointer'/>
+                                {cancel}
+                            </div>
+                        </div>
+
+                        <div className='flex w-full justify-center out
+                                        max-[500px]:px-[5px]'>
+                                            
+                            <div className='w-full flex in n95 h-full'>
+                                <Pages others='flex-col gap-[20px] active:text-textAsh1 '/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
