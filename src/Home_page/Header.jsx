@@ -30,16 +30,14 @@ export default function Header() {
                     <div className={`fixed items-center flex-col top-0 right-0 w-full z-10 bg-background text-mainText 
                                     ${hamburger ? 'flex' : 'hidden'}`}>
                         
-                        <div className='flex w-full justify-center out
-                                        '>
-                            <div className='inside p-Header between'>
+                        <div className='flex w-full justify-center out'>
+                            <div className='inside p-Header max-[500px]:px-[10px]  between'>
                                 <img  src={Logo} alt="Logo" className='w-[60px] cursor-pointer'/>
                                 {cancel}
                             </div>
                         </div>
 
-                        <div className='flex w-full justify-center out
-                                        '>
+                        <div className='flex w-full justify-center out'>
                                             
                             <div className='w-full flex in n95 h-full'>
                                 <Pages others='flex-col gap-[20px] active:text-textAsh1 '/>
